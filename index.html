@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>nobius</title>
+		<link href="reset.css" rel="stylesheet">
+
+		<style type="text/css">
+
+			body {
+				line-height: 0px;
+				background-color: #ffffff;;
+			}
+
+			
+			img, video {
+				padding-bottom: 0px;
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+
+
+		<img src="1.jpg">
+		<img src="2.jpg">
+		<video preload="auto" loop="true" muted="muted" autoplay="true">
+			<source src="1.mp4">
+		</video>
+		<img src="3.jpg">
+		<video preload="auto" loop="true" muted="muted" autoplay="true">
+			<source src="2.mp4">
+		</video>
+		<img src="4.jpg">
+		<video preload="auto" loop="true" muted="muted" autoplay="true">
+			<source src="3.mp4">
+		</video>
+
+<script>
+
+var video = document.getElementById("element");
+
+video.addEventListener('click', function(e) {
+   if (video.paused || video.ended) video.play();
+   else video.pause();
+});
+
+</script>
+
+</body></html>
