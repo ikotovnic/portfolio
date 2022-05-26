@@ -237,5 +237,43 @@
   margin-top: 41%;
   margin-left: 31%;
 }
+@media only screen and (max-width: 600px){
+  .about{
+    margin: 120px 0px 200px 0px;
+  }
+  .raw1, .raw2, .raw3{
+    margin: 0px;
+  }
+  .about .content .raw2 .title p{
+    width: 80%;
+  }
+  .about .raw1{
+    width: 100%;
+  }
+  .about .raw2{
+    width: 100%;
+    margin: 0px;
+  }
+  .about .content{
+    flex-direction: column;
+    margin: var(--main-page-pad-mob);
+  }
+  .about .text{
+    flex-direction: column;
+  }
+  .about .text .small{
+    width: 100%;
+  }
+  .about .content .raw2 .title p{
+    font-size: 9vw;
+    line-height: 14vw;
+  }
+  .cityimg{
+    width: 23vw;
+    height: 23vw;
+    margin-top: 73%;
+    margin-left: 48%;
+  }
+}
 
 </style>

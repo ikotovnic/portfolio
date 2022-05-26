@@ -350,4 +350,15 @@
      -webkit-animation: rotate 6s linear infinite;
     animation: rotate 6s linear infinite;
   }
+
+    @media only screen and (max-width: 600px){
+      .maintitle{
+        margin: var(--main-page-pad-mob);
+      }
+      .maintitle .text p{
+        font-size: 5vh;
+        line-height: 14vh;
+      }
+
+    }
 </style>

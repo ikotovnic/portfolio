@@ -315,5 +315,18 @@
 		background-size: 100% 100%;
 	}
 
+	@media only screen and (max-width: 600px){
+		.prjcts{
+			margin: var(--main-page-pad-mob);
+		}
+		.prjcts .subtitle{
+			font-size: 13px;
+			line-height: 16px;
+		}
+		.one, .two, .three, .four, .five{
+			margin-top: 0px;
+		}
+	}
+
 	
 </style>

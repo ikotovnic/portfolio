@@ -63,6 +63,7 @@
   :root {
     --main-page-pad: 0px 45px 40px 125px;
     --color-accent:  #F5B40D;
+    --main-page-pad-mob: 0px 10px 10px 55px;
   }
   body{
     background-color: #110F1A;

@@ -94,4 +94,25 @@
 	color: #FFFFFF;
 	margin: 20px;
 	}
+
+	@media only screen and (max-width: 600px){
+		.contact{
+			margin: var(--main-page-pad-mob);
+		}
+		.contact .text{
+			flex-direction: column;
+			margin-top: 100px;
+		}
+		.contact .text p{
+			margin: 0px;
+			font-size: 12px;
+		}
+		.contact .title{
+			flex-direction: column;
+		}
+		.contact .title p{
+			font-size: 18vw;
+			text-align: center;
+		}
+	}
 </style>
