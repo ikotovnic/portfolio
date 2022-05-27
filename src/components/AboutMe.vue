@@ -231,6 +231,9 @@
   color: #fff;
   position: relative;
 }
+.about .content .raw2 .title{
+  position: relative;
+}
 .cityimg{
   width: 15vw;
   height: 15vw;
@@ -238,8 +241,10 @@
   background-size: cover;
   border-radius:50%;
   position: absolute;
-  margin-top: 41%;
-  margin-left: 31%;
+  /*margin-top: 41%;
+  margin-left: 31%;*/
+  top: 37%;
+  right: 7%;
 }
 @media only screen and (max-width: 600px){
   .about{
@@ -276,8 +281,8 @@
   .cityimg{
     width: 23vw;
     height: 23vw;
-    margin-top: 73%;
-    margin-left: 48%;
+    top: 44%;
+    right: 7%;
   }
 }
 
