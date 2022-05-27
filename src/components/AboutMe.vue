@@ -71,7 +71,11 @@
                             
               if ( ( pos.top>(hi*0.2)||pos.bottom>(hi*0.2) ) && ( pos.top<(hi*0.8) || pos.bottom<(hi*0.8) ) ) {
                 fadeel[i].style.opacity = '1'
-              } else{fadeel[i].style.opacity = '0'}
+                fadeel[i].style.webkitFilter = "blur(0px)"
+              } else{
+                fadeel[i].style.opacity = '0'
+                fadeel[i].style.webkitFilter = "blur(30px)"
+              }
             }
           }
 
@@ -249,6 +253,7 @@
   }
   .about .raw1{
     width: 100%;
+    z-index: 1;
   }
   .about .raw2{
     width: 100%;

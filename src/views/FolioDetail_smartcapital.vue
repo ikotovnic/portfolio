@@ -16,7 +16,8 @@
                 <div class="scroll1"></div>
             </div>
             <div class="right">
-                <div class="visit">visit site</div>
+                <div class="visit">
+                    <p><a href="#">visit site</a></p></div>
                 <div class="description">
                     Implementation of ERP, CRM, CRM, HR and BI systems, automation of marketing and sales departments
                 </div>
@@ -92,6 +93,15 @@
     img{
         width: 100%;
     }
+    a{
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: #F5B40D;
+      text-decoration: none;
+    }
     .cover{
         display: flex;
         flex-direction: column;
@@ -128,7 +138,7 @@
     }
 
     .covertitle .left{
-        width: 30%;
+        width: 50%;
         font-weight: 800;
         justify-content: space-between;
         display: flex;
@@ -202,7 +212,7 @@
         justify-content: space-between;
         display: flex;
         flex-direction: column;
-        width: 10%;
+        width: 20%;
     }
 
     /*textblock*/
@@ -313,6 +323,59 @@
         line-height: 22px;
         color: #FFFFFF;
         margin-bottom: 40px;
+    }
+    @media only screen and (max-width: 860px){
+        a{
+            font-size: 12px;
+        }
+        .cover{
+            height: 100%;
+            justify-content: center;
+        }
+        .coverimg{
+            margin-right: 0px;
+            margin-left: 0px;
+            width: 80%;
+        }
+        .covertitle{
+            flex-direction: column;
+            margin-bottom: 0px;
+            height: 100vh;
+        }
+        .covertitle .right{
+            width: 100%;
+            font-size: 12px;
+        }
+        .covertitle .right .description{
+            margin-top: 20px;
+        }
+        .covertitle .left{
+            width: 100%;
+        }
+        .covertitle .left .text{
+            font-size: 19vw;
+        }
+        .covertitle .left .tags{
+            font-size: 12px;
+        }
+        .covertitle .center{
+            order: 3;
+            align-items: baseline;
+            font-size: 12px;
+        }
+        .covertitle .center .scroll1{
+            width: 50px;
+            height: 50px;
+        }
+        .textblock .left{
+            width: 90%;
+        }
+        .text{
+            font-size: 18px;
+        }
+        .nextprj .subtitle {
+            font-size: 12px;
+        }
     }
 
 </style>

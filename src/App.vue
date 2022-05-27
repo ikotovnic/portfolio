@@ -35,17 +35,18 @@
 
 
   function myCursorChangeOn(){
-    mycursor[0].style.transform = 'scale(3.5)'
+    mycursor[0].classList.add('mycursorhover')
   }
 
   function myCursorChangeOff(){
-    mycursor[0].style.transform = 'scale(1)'
+    mycursor[0].classList.remove('mycursorhover')
   }
 
   function getAlllinks(){
     for(let i=0; i<mylink.length;i++){
       mylink[i].addEventListener("mouseover", myCursorChangeOn, false)
       mylink[i].addEventListener("mouseout", myCursorChangeOff, false)
+      mylink[i].addEventListener('click', myCursorChangeOff, false)
     }
   }
 
@@ -125,5 +126,24 @@
     z-index: 999;
     transition: transform 0.5s;
     pointer-events: none;
+  }
+
+  .mycursorhover{
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: stretch;
+    animation-play-state: running;
+  }
+
+  @keyframes stretch {
+    0% {
+      transform: scale(.7);
+    }
+    100% {
+      transform: scale(2.5);
+    }
   }
 </style>
