@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="maintitle fadeel" id="TitleList">
+    <div class="maintitle" id="TitleList">
       <div>
         <div class="text two" id="maintitle2">
           <p><br>Good<br>Please,<br>allow<br>camera<br>access</p>
@@ -250,6 +250,10 @@
           this.mesh.position.x = this.movex * 5;
           this.mesh.position.y = this.movey * 5;
           this.camera.position.y = -1;
+
+          this.mesh.rotation.x += this.movey * 0.1
+          this.mesh.rotation.y += this.movex * 0.1
+          this.mesh.rotation.z += this.movex * 0.1
         } 
         this.renderer.render(this.scene, this.camera)
       },

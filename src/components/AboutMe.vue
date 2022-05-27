@@ -243,7 +243,7 @@
   position: absolute;
   /*margin-top: 41%;
   margin-left: 31%;*/
-  top: 37%;
+  top: 46%;
   right: 7%;
 }
 @media only screen and (max-width: 600px){
